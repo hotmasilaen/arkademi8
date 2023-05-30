@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            console.log();
+            if (x == '') {
+                alert("Nama harus diisi yaaaa");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        .bg-yellow{
+            background-color: yellow;
+        }
+        table > thead{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ini Judul Aplikasi saya -->
+    <h1>Kursus Online dari Lembaga Pelatihan Resmi untuk</h1>
+    <a href="https://arkademi.com/promo-event">Promo dan Event</a>
+    <p>
+        Arkademi adalah <b>lembaga kursus dan pendidikan resmi</b> berlisensi dari Kementrian Pendidikan, Kebudayaan, Riset, dan
+        Teknologi RI
+    </p>
+    <!-- <img alt="Logo Pendidikan" src="https://www.apple.com/v/home/ba/images/promos/privacy/privacy__fzwalkil8paq_large.jpg" /> -->
+
+    <mark>Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+    karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+    profesi.</mark>
+
+    <p class="bg-yellow">Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+    karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+    profesi.</p>
+    
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name="fname"/>
+        <input type="submit" value="Submit" />
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Kode pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><code>pre</code></th>
+                <td>No</td>
+                <td>Neither tag ...</td>
+            </tr>
+            <tr>
+                <th><code>img</code></th>
+                <td>Yes</td>
+                <td>No end tag ...</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

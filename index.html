@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custome-homepage-hero{
+            width: 100%;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .hero-new-wrapper {
+            justify-content: space-between;
+            position: relative;
+            padding-top: 4.857vw;
+            padding-bottom: 12.545vw;
+            margin: auto;
+            width: 80%;
+            z-index: 1;
+        }
+        .title{
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 2.378vw;
+            line-height: 3.264vw;
+            color: #1c1d20;
+            margin-bottom: 1.25vw;
+        }
+        .description{
+            font-family: Source Sans Pro;
+            font-weight: 600;
+            font-size: 1.007vw;
+            line-height: 1.458vw;
+            color: #55575a;
+            margin-bottom: 0.972vw;
+        }
+        .information{
+            gap: 0.786vw;
+            margin-bottom: 2.577vw;
+            align-items: center;
+        }
+        .btn-recomendation{
+            background: linear-gradient(261.28deg,#ff9417 18.17%,#ff8017 84.69%);
+            border-radius: 0.429vw;
+            border: none;
+            outline: none;
+            min-width: 24.285vw;
+            height: 3.932vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.701vw;
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 1.097vw;
+            line-height: 1.357vw;
+            letter-spacing: .013vw;
+            color: #fff;
+        }
+        .card-info{
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 0.556vw;
+            padding: 1.654vw 3.458vw 1.544vw 2.264vw;
+            gap: 6px;
+            max-width: 18.74vw;
+            width: 25%;
+            border: 2px solid #006cbb;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @media only screen and (max-width: 600px){
+            .image-hero{
+                display: none;
+            }
+
+            .title {
+                font-size: 32px;
+                line-height: 5.264vw;
+            }
+
+            .description {
+                font-size: 4.007vw;
+                line-height: 4.458vw;
+            }
+            .btn-recomendation{
+                font-size: 4.097vw;
+                padding: 30px;
+            }
+            .information > p{
+                font-size: 20px;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <div>
+        <div class="custome-homepage-hero">
+            <div class="hero-new-wrapper d-flex">
+                <div class="text-hero">
+                    <h1 class="title">Kursus Online dari<br>
+                    Lembaga Pelatihan Resmi untuk<br>
+                    <span>Tingkatkan Karier Profesionalmu</span></h1>
+
+                    <p class="description">Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan
+                    karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi
+                    profesi.</p>
+
+                    <div class="information d-flex">
+                        <img src="./icon-pendidikan.png" width="35" height="35" />
+                        <p>Arkademi adalah <b>lembaga kursus dan pendidikan resmi berlisensi</b> dari Kementrian Pendidikan, Kebudayaan, Riset, dan
+                        Teknologi RI</p>
+                    </div>
+                    
+                    <button class="btn-recomendation d-flex">Lihat yang Sesuai untuk Kariermu</button>
+
+                </div>
+                <div>
+                    <img class="image-hero" src="./image-new-hero-comp.c0ee2441.png" />
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="card-info">
+                    <img src="./icon-pendidikan.png" alt="icon" width="40" height="40">
+                    <p>Berizin resmi dari Pemerintah</p>
+                </div>
+                <div class="card-info">
+                    <img src="./icon-pendidikan.png" alt="icon" width="40" height="40">
+                    <p>Kurikulum standar pendidikan profesional</p>
+                </div>
+                <div class="card-info">
+                    <img src="./icon-pendidikan.png" alt="icon" width="40" height="40">
+                    <p>Sertifikat kompetensi diakui industri</p>
+                </div>
+                <div class="card-info">
+                    <img src="./icon-pendidikan.png" alt="icon" width="40" height="40">
+                    <p>Instruktur praktisi dengan lisensi profesi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: #f99119;
+            background-color: #006cba;
+            height: 148px;
+            max-height: 150px;
+            min-height: 100px;
+            width: 500px;
+            max-width: 600px;
+            min-width: 400px;
+        }
+        .description{
+            color: blue;
+        }
+        #btn{
+            background-image: url('./lovepik-flower-border-png-image_400190383_wh300.png');
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 24px;
+        }
+
+        .border{
+            border-width: 7px;
+            border-style: double;
+            border-color: #8abd8a;
+            border-radius: 10px;
+            border-radius: 15px;
+        }
+        button{
+            margin-bottom: 50px;
+        }
+        img{
+            filter: blur(3px);
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #8abd8a;
+            animation: animasiKotak 2s ease infinite alternate forwards running;
+            transition: width 5s, height 4s, transform 2s, font-size 2s;
+            transition-delay: 2s;
+        }
+        div:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+            font-size: 24px;
+        }
+
+        @keyframes animasiKotak {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Kursus Online dari<br>
+    Lembaga Pelatihan Resmi untuk Tingkatkan Karier Profesionalmu</h1>
+
+    <p class="description border" id="btn">
+        Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi.
+    </p>
+
+    <p>Arkademi adalah lembaga kursus dan pendidikan resmi berlisensi dari Kementrian Pendidikan, Kebudayaan, Riset, dan
+    Teknologi RI</p>
+
+    <button>Lihat yang Sesuai untuk Kariermu</button><br>
+
+    <img src="./pngtree-summer-fruits-and-vegetables-hand-painted-geometric-small-fresh-green-background-image_157292.jpg" />
+
+    <div>Ini Elemen terakhir</div>
+</body>
+</html>
